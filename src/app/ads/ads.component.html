@@ -1,0 +1,182 @@
+<div class="bg-ads">
+  <div class="nav-bar d-flex flex-column flex-md-row align-items-center p-3">
+    <h5 class="my-0 col-md-2">
+      <img class="mb-4" src="assets/img/logo-white.svg" height="38px" alt="logo" />
+    </h5>
+    <nav class="my-2 my-md-0 mr-md-3 mr-md-auto">
+      <a class="p-2" href="#">Dashboard</a>
+      <a class="p-2 selected" href="#">Anúncios</a>
+      <a class="p-2" href="#">Rede</a>
+      <a class="p-2" href="#">Relatórios</a>
+    </nav>
+    <div class="col-md-auto">
+      <div class="rounded-circle" style="border:1px solid gray;background: #FFF url(assets/img/user.jpg) center center;background-size: contain;height:38px;width:38px;">
+      </div>
+    </div>
+    <div class="col-md-auto" style="border-right: 1px solid #fbfbfb">
+      <div style="line-height: 50%">Olá Carolina Steiner</div>
+      <a href="javascript:void(0)" style="line-height: 50%;color: #49c9e7">sair</a>
+    </div>
+    <div class="col-md-auto">
+      <i class="fas fa-cog"></i>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row" style="margin-top:30px">
+      <div class="col-md-12">
+        <a class="color-gray">ANÚNCIOS ></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <h3 class="color-gray">ANÚNCIOS</h3>
+      </div>
+      <div class="col-md-10">
+        <form class="form-inline">
+          <div class="form-group" style="width:calc(100% - 695px);padding-right: 15px">
+            <div class="input-group" style="width: 100%">
+              <input type="text" class="form-control form-control-sm" id="inputSearch" placeholder="Digite para filtrar" />
+              <div class="input-group-append">
+                <button class="btn btn-sm" type="button">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="input-group" style="width:404px;padding-right:15px">
+            <label for="inputPeriodoInicial" class="col-form-label-sm">Seleção de período:&nbsp;</label>
+            <div class="input-group">
+              <input class="form-control form-control-sm" style="width:100px" placeholder="dd-mm-yyyy" name="dp" [(ngModel)]="model" ngbDatepicker
+                #initialDate="ngbDatepicker">
+              <div class="input-group-append">
+                <button class="btn btn-sm" (click)="initialDate.toggle()" type="button">
+                  <i class="far fa-calendar-alt"></i>
+                </button>
+              </div>
+            </div>&nbsp;
+            <div class="input-group">
+              <input class="form-control form-control-sm" style="width:100px" placeholder="dd-mm-yyyy" name="dp" [(ngModel)]="model" ngbDatepicker
+                #finalDate="ngbDatepicker">
+              <div class="input-group-append">
+                <button class="btn btn-sm" (click)="finalDate.toggle()" type="button">
+                  <i class="far fa-calendar-alt"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="form-group" width="width:276px">
+            <label for="inputConcessionaria" class="col-form-label-sm">Seleção de concessionária:&nbsp;</label>
+            <select class="form-control form-control-sm" id="inputConcessionaria" style="width:123px">
+              <option value="todas">Todas</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row stat-row" style="margin-top:30px">
+      <div class="col-md-2 stat-box">
+        <h6>VEÍCULOS
+          <br/>CADASTRADOS</h6>
+        <h4>1565</h4>
+      </div>
+      <div class="col-md-2 stat-box">
+        <h6>VEÍCULOS
+          <br/>ANUNCIADOS</h6>
+        <h4>1250</h4>
+      </div>
+      <div class="col-md-2 stat-box">
+        <h6>VEÍCULOS
+          <br/>VENDIDOS</h6>
+        <h4>670</h4>
+      </div>
+      <div class="col-md-2 stat-box">
+        <h6>VEÍCULOS
+          <br/>FINALIZADOS</h6>
+        <h4>580</h4>
+      </div>
+      <div class="col-md-2 stat-box">
+        <h6>VEÍCULOS
+          <br/>NÃO ANUNCIADOS</h6>
+        <h4>300</h4>
+      </div>
+      <div class="col-md-2 stat-box">
+        <h6>VEÍCULOS
+          <br/>INTERROMPIDOS</h6>
+        <h4>15</h4>
+      </div>
+    </div>
+    <div class="row" style="margin-top:30px">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="color-blue">Santa Fé Veículos</h4>
+            <ul class="list-group list-group-flush">
+
+              <li class="list-group-item">
+                <div class="row">
+                  <div class="col-md-auto">
+                    <div class="rounded-circle" style="border:1px solid gray;background: #FFF url(assets/img/car.jpg) center center;height:100px;width:100px;">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <h5 class="color-blue">Peugeot 2008 1.6 16V Flex
+                      <br/>Allure 4P Automático</h5>
+                    <h6>2015 | Flex | MLL-1568</h6>
+                    <span class="text-muted">Publicado em 10/05/2017 por Vinícius Marques Rocha</span>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row ad-grid-row">
+                      <div class="col-md-auto ad-grid-box">
+                        <div class="ad-grid-title">MELHOR OFERTA</div>
+                        <div class="ad-grid-value">R$33.500,00</div>
+                      </div>
+                      <div class="col-md-auto ad-grid-box">
+                        <div class="ad-grid-title">VALOR DA FIPE</div>
+                        <div class="ad-grid-value">R$37.000,00</div>
+                      </div>
+                      <div class="col-md-auto ad-grid-box">
+                        <div class="ad-grid-title">TEMPO RESTANTE</div>
+                        <div class="ad-grid-value">15:34:15</div>
+                      </div>
+                      <div class="col-md-auto ad-grid-box">
+                        <div class="ad-grid-title">PERCENTUAL DA FIPE</div>
+                        <div class="ad-grid-value">78%</div>
+                      </div>
+                      <div class="col-md-auto ad-grid-box">
+                        <div class="ad-grid-title">STATUS</div>
+                        <div class="ad-grid-value">ATIVO</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row justify-content-md-center" style="margin-top:30px">
+          <ngb-pagination [collectionSize]="70" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
+        </div>
+      </div>
+    </div>
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img class="mb-2" src="assets/img/logo-color.svg" alt="" width="100px" />
+          <small class="d-block mb-3 text-muted">© 2017 - 2018</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Dashboard</h5>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Anúncios</h5>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Rede</h5>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Relatórios</h5>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
