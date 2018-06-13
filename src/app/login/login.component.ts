@@ -8,12 +8,14 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
+  model: any = {};
+
   constructor(private router:Router) { }
 
   ngOnInit() {
   }
 
   onLogin():void {
-    //this.router.navigate(['/ads']);
+    this.router.navigate(['/ads']);
   }
 }
